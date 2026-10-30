@@ -124,7 +124,7 @@ Matching is **case-insensitive and substring-based** on title + description. Pas
 - Avoid very short or generic words (`neu`, `vb`, `ok`): they match inside many other words. `neu` hits *neutral*, *neuwertig*, *Neukauf*.
 - Use **any** matching to cast a wide net and **all** to narrow down (e.g. `kaum getragen` + `größe 42`).
 - Sellers write umlauts both ways. Add variants when it matters: `ungeöffnet, ungeoeffnet`, `größe, groesse`, `zubehör, zubehoer`.
-- Vinted.de listings are mostly German, but many sellers write in English. Try both lists.
+- Vinted.de listings are mostly German, but many sellers write in English, and some in Dutch, French or Italian. Try several lists, see [German](#-german), [English](#-english), [Dutch](#-dutch-nederlands), [French](#-french-français) and [Italian](#-italian-italiano). The Dutch, French and Italian sections end with a few extra notes.
 
 ## 🇩🇪 German
 
@@ -213,6 +213,138 @@ authentic, genuine, vintage, retro, rare, limited edition, collector, deadstock,
 ```
 runs small, runs large, true to size, tried on, wrong size, doesn't fit, tags attached
 ```
+
+## 🇳🇱 Dutch (Nederlands)
+
+### Gift, unused or unwanted purchase
+```
+cadeau, nooit gebruikt, ongebruikt, ongedragen, nooit gedragen, originele verpakking, ongeopend, verzegeld, nieuw in doos, dubbel gekregen, miskoop, past niet, verkeerde maat
+```
+
+### Excellent condition / like new
+```
+als nieuw, zo goed als nieuw, nieuwstaat, perfecte staat, uitstekende staat, zeer goede staat, nauwelijks gebruikt, amper gedragen, een keer gedragen, eenmaal gedragen, alleen gepast, geen gebruikssporen, rookvrij, huisdiervrij
+```
+
+### Defects, repair and spare parts
+```
+defect, kapot, voor onderdelen, onderdelen, reparatie, werkt niet, doet het niet, gaatje, gaten, scheur, vlek, kras, beschadigd, gebruikssporen, verkleurd, accu zwak
+```
+
+### Motivated seller, negotiable, bundles
+```
+onderhandelbaar, biedingen, moet weg, mag weg, snel weg, dringend, verhuizing, opruiming, huisontruiming, korting, bundel, bundelkorting, meerdere items
+```
+
+### Complete set, accessories, proof of purchase
+```
+originele doos, originele verpakking, accessoires, toebehoren, compleet, volledig, oplaadkabel, lader, adapter, handleiding, aankoopbewijs, factuur, kassabon, serienummer
+```
+
+### Electronics and tech
+```
+garantie, factuur, serienummer, accugezondheid, batterijconditie, cycli, ontgrendeld, simlockvrij, fabrieksinstellingen, nieuw toestel, screenprotector
+```
+
+### Authentic, vintage, rare, collectible
+```
+origineel, authentiek, echtheidscertificaat, vintage, retro, zeldzaam, gelimiteerd, limited edition, verzamelaar, deadstock, uitverkocht, niet meer verkrijgbaar
+```
+
+### Clothes and shoes: fit and sizing
+```
+valt klein, valt groot, past niet, te klein, te groot, verkeerde maat, alleen gepast, eenmaal gedragen, ongedragen, met label, met kaartje
+```
+
+## 🇫🇷 French (Français)
+
+### Gift, unused or unwanted purchase
+```
+cadeau, jamais utilisé, jamais utilise, non utilisé, jamais porté, non porté, emballage d'origine, sous blister, scellé, jamais ouvert, non ouvert, neuf avec étiquette, neuf avec etiquette, reçu en double, mauvaise taille, erreur d'achat
+```
+
+### Excellent condition / like new
+```
+comme neuf, état neuf, très bon état, tres bon etat, excellent état, parfait état, impeccable, à peine utilisé, très peu porté, porté une fois, porté une seule fois, juste essayé, aucune trace d'usure, non-fumeur, sans animaux
+```
+
+### Defects, repair and spare parts
+```
+défectueux, defectueux, cassé, hors service, pour pièces, pièces détachées, à réparer, ne fonctionne pas, ne marche pas, un trou, petit trou, déchirure, déchiré, une tache, petite tache, rayure, abîmé, traces d'usure, décoloré, batterie faible
+```
+
+### Motivated seller, negotiable, bundles
+```
+négociable, negociable, à débattre, doit partir, urgent, déménagement, demenagement, vide-dressing, vide dressing, réduction, remise, bundle, lot de, plusieurs articles, faire une offre
+```
+
+### Complete set, accessories, proof of purchase
+```
+boîte d'origine, boite d'origine, emballage d'origine, accessoires, complet, ensemble complet, câble de charge, chargeur, adaptateur, notice, mode d'emploi, facture, ticket de caisse, preuve d'achat, numéro de série
+```
+
+### Electronics and tech
+```
+garantie, facture, numéro de série, santé de la batterie, cycles, débloqué, désimlocké, réinitialisé, appareil neuf, protection d'écran
+```
+
+### Authentic, vintage, rare, collectible
+```
+authentique, original, certificat d'authenticité, vintage, rétro, rare, édition limitée, collector, collection, deadstock, épuisé, introuvable
+```
+
+### Clothes and shoes: fit and sizing
+```
+taille petit, taille grand, taille normalement, trop petit, trop grand, ne me va pas, mauvaise taille, juste essayé, porté une fois, jamais porté, avec étiquette
+```
+
+## 🇮🇹 Italian (Italiano)
+
+### Gift, unused or unwanted purchase
+```
+regalo, mai usato, mai utilizzato, non usato, mai indossato, non indossato, confezione originale, imballo originale, sigillato, mai aperto, ancora imballato, nuovo con cartellino, taglia sbagliata, acquisto sbagliato
+```
+
+### Excellent condition / like new
+```
+come nuovo, pari al nuovo, ottime condizioni, ottimo stato, perfette condizioni, impeccabile, usato pochissimo, poco usato, indossato una volta, indossato una sola volta, solo provato, nessun segno di usura, non fumatori, senza animali
+```
+
+### Defects, repair and spare parts
+```
+difettoso, rotto, guasto, per ricambi, pezzi di ricambio, da riparare, non funziona, buco, strappo, macchia, graffio, graffi, rovinato, segni di usura, scolorito, batteria scarica
+```
+
+### Motivated seller, negotiable, bundles
+```
+trattabile, urgente, deve sparire, trasloco, svuota armadio, svuotatutto, sconto, più articoli, lotto, pacchetto, fai un'offerta
+```
+
+### Complete set, accessories, proof of purchase
+```
+scatola originale, confezione originale, imballo originale, accessori, completo, set completo, cavo di ricarica, caricabatterie, alimentatore, manuale, istruzioni, fattura, scontrino, prova d'acquisto, numero di serie
+```
+
+### Electronics and tech
+```
+garanzia, fattura, scontrino, numero di serie, salute della batteria, cicli, sbloccato, senza blocco sim, ripristinato, resettato, dispositivo nuovo, protezione schermo
+```
+
+### Authentic, vintage, rare, collectible
+```
+autentico, originale, certificato di autenticità, vintage, retrò, raro, edizione limitata, da collezione, collezionisti, deadstock, esaurito, introvabile
+```
+
+### Clothes and shoes: fit and sizing
+```
+veste piccolo, veste grande, veste bene, calza piccolo, calza grande, troppo piccolo, troppo grande, taglia sbagliata, solo provato, indossato una volta, mai indossato, con cartellino
+```
+
+### Notes on the Dutch, French and Italian lists
+
+- The tool is set up for **vinted.de**. Sellers there mostly write German or English, but Dutch, French and Italian listings do turn up. To search another Vinted country (vinted.nl, vinted.fr, vinted.it), change `BASE` at the top of `vinted_crawler.py`. This is untested.
+- The **color filter** only knows German and English color names. For Dutch, French or Italian listings, put the color word into the keywords instead (for example `zwart`, `noir`, `nero`) or use the pasted-URL filter.
+- Short words also match inside longer ones, so the lists use phrases such as `un trou` instead of `trou` (which would match *trouvé*) or `une tache` instead of `tache` (which would match *attache*). Keep that in mind when you add your own words.
 
 ---
 
