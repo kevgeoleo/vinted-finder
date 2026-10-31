@@ -64,7 +64,8 @@ COLORS = {
 # Vinted filter params we are willing to copy from a pasted catalog URL
 FORWARD_KEYS = {"catalog[]": "catalog[]", "catalog": "catalog[]", "brand_ids[]": "brand_ids[]",
                 "size_ids[]": "size_ids[]", "color_ids[]": "color_ids[]",
-                "material_ids[]": "material_ids[]"}
+                "material_ids[]": "material_ids[]", "status_ids[]": "status_ids[]",
+                "price_from": "price_from", "price_to": "price_to"}
 
 HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -139,7 +140,10 @@ def parse_filter_url(text):
 
 
 def catalog_url_params(query, min_price, max_price, statuses, page, extra=()):
-    p = [("search_text", query), ("page", page), ("order", "newest_first")]
+    p = []
+    if query:
+        p.append(("search_text", query))
+    p += [("page", page), ("order", "newest_first")]
     if min_price is not None:
         p.append(("price_from", min_price))
     if max_price is not None:
@@ -147,7 +151,13 @@ def catalog_url_params(query, min_price, max_price, statuses, page, extra=()):
     p.append(("currency", "EUR"))
     for sid in statuses:
         p.append(("status_ids[]", sid))
-    p.extend(extra)
+    # values copied from a pasted URL; the form's own price/condition settings win
+    for k, val in extra:
+        if k in ("price_from", "price_to") and any(k == x for x, _ in p):
+            continue
+        if k == "status_ids[]" and statuses:
+            continue
+        p.append((k, val))
     return urlencode(p)
 
 
@@ -277,7 +287,7 @@ def color_matches(attr, wanted, fallback=""):
 
 def main():
     ap = argparse.ArgumentParser(description="Vinted.de keyword crawler")
-    ap.add_argument("-q", "--query", default="", help="Search term sent to Vinted (e.g. product name)")
+    ap.add_argument("-q", "--query", default="", help="Search term sent to Vinted (e.g. product name). Optional with --filter-url")
     ap.add_argument("-k", "--keywords", nargs="*", default=[],
                     help="Keywords that must appear in title/description (case-insensitive)")
     ap.add_argument("--match", choices=["any", "all"], default="any")
@@ -296,8 +306,8 @@ def main():
 
     extra, url_query = parse_filter_url(args.filter_url)
     query = args.query or url_query
-    if not query:
-        ap.error("Provide -q/--query (or a --filter-url that contains search_text)")
+    if not query and not extra:
+        ap.error("Provide -q/--query or a --filter-url with category/brand/size/color filters")
 
     if not IMPERSONATE:
         print("Tip: `pip install curl_cffi` makes blocking much less likely.", file=sys.stderr)

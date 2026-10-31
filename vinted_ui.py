@@ -5,13 +5,6 @@ Local web UI for vinted_crawler.py  (no extra dependencies: Python standard libr
 Put this file in the SAME folder as vinted_crawler.py, then run:
     python vinted_ui.py
 It opens http://127.0.0.1:8765 in your browser.
-
-measurement - Messung, meting, maat, Maß, Vermessung 
-gift - geschenk, cadeau, regalo, omaggio, dono
-number of uses (german) - einmal benuzt, einmal getragen, ungetragen, unrown, used once, worn once, ein oder zwei, wenig getragen, barely used
-number of uses (dutch) - Een keer gebruikt, Eén keer gedragen, Ongedragen, Ongebruikt, Eenmaal gebruikt, Eenmaal gedragen, Een of twee keer, Weinig gedragen, Nauwelijks gebruikt
-number of uses (french) - Utilisé une fois, Porté une fois, Jamais porté, Non porté, Utilisé une seule fois, Porté une seule fois, Une ou deux fois, Peu porté, À peine utilisé
-number of uses (Italian) - Usato una volta, Indossato una volta, Mai indossato, Mai indossato, Usato una sola volta, Indossato una sola volta, Una o due volte, Indossato poco, Usato pochissimo
 """
 import json
 import sys
@@ -182,8 +175,9 @@ class Handler(BaseHTTPRequestHandler):
                 }
             except (ValueError, TypeError):
                 return self._json({"error": "Invalid input"}, 400)
-            if not p["query"]:
-                return self._json({"error": "Search term is required"}, 400)
+            if not p["query"] and not p["extra"]:
+                return self._json({"error": "Enter a search term or paste a filtered vinted.de URL "
+                                            "(with category, brand, size or color filters)"}, 400)
             job = Job()
             jid = uuid.uuid4().hex
             JOBS[jid] = job
@@ -250,7 +244,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   <form id="form" class="card">
     <div class="grid">
       <div class="full">
-        <label class="l" for="query">Search term <span class="hint">(product name, sent to Vinted)</span></label>
+        <label class="l" for="query">Search term <span class="hint">(product name, sent to Vinted; optional if you paste a filtered URL below)</span></label>
         <input type="text" id="query" placeholder="z.B. Nike Air Max 90">
       </div>
       <div class="full">
